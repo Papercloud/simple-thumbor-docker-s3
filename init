@@ -1,0 +1,5 @@
+#!/bin/bash
+
+/usr/local/bin/envtpl /etc/thumbor.conf.tpl --keep-template --allow-missing
+
+/usr/local/bin/thumbor --port 8000 -c /etc/thumbor.conf

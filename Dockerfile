@@ -28,8 +28,4 @@ RUN pip install thumbor==$THUMBOR_VERSION \
                 envtpl
 
 COPY thumbor.conf.tpl /etc/thumbor.conf.tpl
-RUN envtpl /etc/thumbor.conf.tpl --keep-template --allow-missing
-
-ENTRYPOINT ["/usr/local/bin/thumbor"]
-
-CMD ["--port=8000", "-c", "/etc/thumbor.conf"]
+COPY init /init
