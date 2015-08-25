@@ -4,7 +4,7 @@
   - Need a lot of thumbnail sizes for all of your slick mobile and response web apps?
   - Don't want to wait for user uploads to be resized asynchronously to every size?
   
-  [Thumbor](https://github.com/thumbor/thumbor) is a on-the-fly image resizing server with a strong community, and it's used all over the place.
+  [Thumbor](https://github.com/thumbor/thumbor) is an on-the-fly image resizing server with a strong community, and it's used all over the place.
   
   With the help of [Thumbor's AWS plugin](https://github.com/thumbor-community/aws) it can read from S3, write resizing meta-data to S3, and write the resized images to S3.
   
