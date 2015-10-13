@@ -125,7 +125,7 @@ ENGINE = '{{ ENGINE | default('thumbor.engines.pil') }}'
 
 ## The security key thumbor uses to sign image URLs
 ## Defaults to: MY_SECURE_KEY
-SECURITY_KEY = {{ SECURITY_KEY | default("'MY_SECURE_KEY'") }}
+SECURITY_KEY = '{{ SECURITY_KEY | default("MY_SECURE_KEY") }}'
 
 ## Indicates if the /unsafe URL should be available
 ## Defaults to: True
@@ -136,9 +136,17 @@ ALLOW_UNSAFE_URL = {{ ALLOW_UNSAFE_URL | default(True) }}
 ALLOW_UNSAFE_URL = {{ ALLOW_UNSAFE_URL | default(True) }}
 
 ## AWS access keys - used in thumbor_aws storage
-AWS_ACCESS_KEY = {{ AWS_ACCESS_KEY | default("''") }}
-AWS_SECRET_KEY = {{ AWS_SECRET_KEY | default("''") }}
+AWS_ACCESS_KEY = '{{ AWS_ACCESS_KEY | default("") }}'
+AWS_SECRET_KEY = '{{ AWS_SECRET_KEY | default("") }}'
 
+
+################################################################################
+
+
+################################# AWS Support ##################################
+
+RESULT_STORAGE_BUCKET = '{{ RESULT_STORAGE_BUCKET | default("") }}'
+RESULT_STORAGE_AWS_STORAGE_ROOT_PATH = '{{ RESULT_STORAGE_AWS_STORAGE_ROOT_PATH | default("") }}'
 
 ################################################################################
 
