@@ -469,6 +469,6 @@ ERROR_FILE_NAME_USE_CONTEXT = {{ ERROR_FILE_NAME_USE_CONTEXT | default('False') 
 SENTRY_DSN_URL = {{ SENTRY_DSN_URL | default("''") }}
 
 ################################################################################
-
+ENGINE_THREADPOOL_SIZE = {{ ENGINE_THREADPOOL_SIZE | default(0) }}
 
 ################################################################################
